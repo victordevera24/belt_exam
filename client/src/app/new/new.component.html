@@ -1,0 +1,46 @@
+
+<h3>Know of a pet needing a home?</h3>
+<div class=new_form>
+    
+<form>
+    <p style='color:red'>{{pet_error}}</p>
+  <p>Pet name: </p>
+    <input type='text' name='newPet.name' [(ngModel)]
+    ='newPet.name'/>
+
+
+  <p>Pet type: </p>
+    <input type='text' name='newPet.type' [(ngModel)]
+    ='newPet.type'/>
+
+
+  <p>Description: </p>
+    <input type='text' name='newPet.description' [(ngModel)]
+    ='newPet.description'/>
+ 
+
+  <p>Skills:</p>
+  <ul>
+    <li>
+      <label>Skill 1: 
+        <input type='text' name='newPet.skillOne' [(ngModel)]
+        ='newPet.skillOne'/>
+      </label>
+    </li>
+    <li>
+      <label>Skill 2: 
+        <input type='text' name='newPet.skillTwo' [(ngModel)]
+        ='newPet.skillTwo'/>
+      </label>
+    </li>
+    <li>
+      <label>Skill 3: 
+        <input type='text' name='newPet.skillThree' [(ngModel)]
+        ='newPet.skillThree'/>
+      </label>
+    </li>
+  </ul>
+  <p><button (click)='addPet()'>Add Pet</button><button (click)='goHome()'>Cancel</button></p>
+</form>
+</div>
+

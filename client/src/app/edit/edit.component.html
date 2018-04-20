@@ -1,0 +1,45 @@
+
+<h3>Edit this pet</h3>
+<div class=edit_form>
+<form>
+
+    <p style='color:red'>{{pet_error}}</p>
+    <p>Pet name: </p>
+    <input type='text' name='editData[0].name' [(ngModel)]
+    ='editData[0].name'/>
+
+  
+    <p>Pet type: </p>
+      <input type='text' name='editData[0].type' [(ngModel)]
+      ='editData[0].type'/>
+  
+  
+    <p>Description: </p>
+      <input type='text' name='editData[0].description' [(ngModel)]
+      ='editData[0].description'/>
+   
+  
+    <p>Skills (optional):</p>
+    <ul>
+      <li>
+        <label>Skill 1: 
+          <input type='text' name='editData[0].skillOne' [(ngModel)]
+          ='editData[0].skillOne'/>
+        </label>
+      </li>
+      <li>
+        <label>Skill 2: 
+          <input type='text' name='editData[0].skillTwo' [(ngModel)]
+          ='editData[0].skillTwo'/>
+        </label>
+      </li>
+      <li>
+        <label>Skill 3: 
+          <input type='text' name='editData[0].skillThree' [(ngModel)]
+          ='editData[0].skillThree'/>
+        </label>
+      </li>
+    </ul>
+    <p><button (click)='editPet()'>Edit pet</button><button (click)='goHome()'>Cancel</button></p>
+  </form>
+</div>

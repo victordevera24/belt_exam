@@ -1,0 +1,27 @@
+
+<a [routerLink]="['/']">home</a>
+<h3>Details about {{petData[0].name}}</h3>
+
+<table>
+  <tr>
+    <td>Pet Type:</td>
+    <td>{{petData[0].type}}</td>
+  </tr>
+  <tr>
+    <td>Description:</td>
+    <td>{{petData[0].description}}</td>
+  </tr>
+  <tr>
+    <td>Skills:</td>
+    <td>
+      <li>{{petData['0'].skillOne}}</li>
+      <li>{{petData['0'].skillTwo}}</li>
+      <li>{{petData['0'].skillThree}}</li>
+    </td>
+  </tr>
+  <tr>
+    <td>Likes:</td>
+    <td>{{petData[0].likes}}</td>
+  </tr>
+</table>
+<button (click)="likePet(petData['0']._id)">Like this pet</button><button (click)="deletePet(petData['0']._id)">Adopt this pet</button>

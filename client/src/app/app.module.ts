@@ -8,11 +8,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NewComponent } from './new/new.component';
+import { DetailsComponent } from './details/details.component';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NewComponent,
+    DetailsComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
